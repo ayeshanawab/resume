@@ -40,7 +40,7 @@
   <body class="container">
     <h1 class="display-1">Ayesha Nawab</h1>
     <h2 class="display-2">Contact me</h2>
-    <form id="contact_form" name="Ayesha Resume Website Contact Form" method="post" netlify>
+    <form id="contact_form" action="/contact?success" name="Ayesha Resume Website Contact Form" method="post" netlify>
      <div class="form-group">
        <label for="name">Name</label>
        <input type="text" class="form-control" name="name" id="name" aria-describedby="name_help" placeholder="Enter your name" required>
@@ -61,6 +61,7 @@
        <textarea class="form-control" name="message" id="message" rows="3"></textarea>
        <small id="phone_help" class="form-text text-muted">*required</small>
      </div>
+     <div data-netlify-recaptcha></div>
      <button type="submit" class="btn btn-success w-100">Send Message</button>
     </form>
     <div id="success" class="jumbotron d-none">
